@@ -14,12 +14,17 @@
     text-align: center;
 }
 
-#right_align{
-    text-align: right;
+#left_align{
+    text-align: left;
 }
 
 #link_box{
     text-align: center;
+}
+
+#programs_table{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main_elements{
