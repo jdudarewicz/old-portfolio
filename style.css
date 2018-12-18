@@ -1,23 +1,36 @@
 body {
-    background-image: url("flowerpattern.jpg");
+    background-color: white;
+    color: #383a47;
+    font-family: 'Roboto Mono', monospace;
 }
 
-.titles {
-    font-size: 1.75rem;
-    font-weight: 100;
-}
-
-.background {
-    border-radius: 30px;
-    padding: 30px;
-    background: rgb(255, 255, 255);
-    background: rgba(255, 255, 255, 0.90);
-}
-
-.top {
+#title {
+    text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 4em;
 }
 
-.bottom {
-    margin-bottom: 50px;
+#includes {
+    color:#f484de;
+}
+
+#default {
+    color: #7ec537;
+}
+
+#func {
+    color: #3779c5;
+}
+
+.background_container {
+    padding : 30px;
+    min-width: 100%;
+    color: #383a47;
+    background-color: #383a47;
+    overflow: auto;
+}
+
+.internal_container {
+    font-size: 1.25em;
 }
