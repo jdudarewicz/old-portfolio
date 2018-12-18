@@ -19,8 +19,16 @@ body {
     color: #7ec537;
 }
 
+#numbers {
+    color: #e9b33e;
+}
+
 #func {
     color: #3779c5;
+}
+
+#variable {
+    color: white;
 }
 
 .background_container {
