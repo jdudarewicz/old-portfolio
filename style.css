@@ -42,3 +42,13 @@ body {
 .internal_container {
     font-size: 1.25em;
 }
+
+.indent {
+    display: block;
+    padding-left: 50px;
+    margin-top: -1em;
+}
+
+.dots {
+    display: inline;
+}
