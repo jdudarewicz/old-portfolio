@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 body {
     background-color: white;
     color: #383a47;
@@ -31,6 +35,10 @@ body {
     color: white;
 }
 
+#comments {
+    color: grey;
+}
+
 .background_container {
     padding : 30px;
     min-width: 100%;
@@ -44,7 +52,7 @@ body {
 }
 
 .indent {
-    display: block;
+    display: none;
     padding-left: 50px;
     margin-top: -1em;
     margin-left: -1em;

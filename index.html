@@ -16,46 +16,66 @@
                 <div class="col-sm-9 background_container">
                     <p id="includes" class="internal_container">
                         #location <span id="default">&lt;Toronto, Ontario&gt;</span> <br>
-                        #phone_number <span id="default">&lt;1(705)818-3096&gt;</span> <br>
+                        #phoneNumber <span id="default">&lt;1(705)818-3096&gt;</span> <br>
                         #projects <span id="default"> &lt;<a href="https://github.com/jdudarewicz/" target="_blank">github</a>&gt; </span> <br>
-                        #see_me <span id="default"> &lt;<a href="https://www.linkedin.com/in/jdudarewicz/" target="_blank">linkedin</a>&gt; </span> <br>
+                        #seeMe <span id="default"> &lt;<a href="https://www.linkedin.com/in/jdudarewicz/" target="_blank">linkedin</a>&gt; </span> <br>
                         #email <span id="default">&lt;jdudarewicz@ryerson.ca&gt;</span> <br>
                     </p>
-                    <p id="includes" class="internal_container" onclick="hideFunc()">
-                        <span id="func">about</span>(me) { <!--<span class="dots" id="aboutDots">...</span> --> <span class="indent" id="aboutHide"> <br>
+                    <p id="comments"class="internal_container">
+                        //click dots to open, click again to close    
+                    </p>
+                    <p id="includes" class="internal_container" onclick="hideFunc('aboutHide','aboutDots')">
+                        <span id="func">about</span>(me) { <span class="dots" id="aboutDots">...</span> <span class="indent" id="aboutHide"> <br>
                             <span id="variable">aboutMe</span> = <span id="default">"Second year computer science student at Ryerson University"</span>; <br>
                             <span id="variable">interests[]</span> = {<span id="default">"Photography"</span>, <span id="default">"Guitar"</span>, <span id="default">"Snowboarding"</span>, <span id="default">"Skiing"</span>, <span id="default">"Motorsports"</span>, <span id="default">"Gaming"</span>}; <br>
+                            <span id="variable">bandsILike[]</span> = {<span id="default">"Arctic Monkeys"</span>, <span id="default">"Tame Impala"</span>, <span id="default">"Muse"</span>, <span id="default">"Kygo"</span>};<br>
+                            <span id="variable">gamesILike[]</span> = {<span id="default">"F1 2018"</span>, <span id="default">"Project Cars 2"</span>, <span id="default">"Skyrim"</span>, <span id="default">"Cities: Skylines"</span>};
                         </span>}
                     </p>
-                    <p id="includes" class="internal_container">
-                        <span id="func">education</span>(postSecondary) { <span class="indent" id="educationHide"><br>
+                    <p id="includes" class="internal_container" onclick="hideFunc('educationHide','educationDots')">
+                        <span id="func">education</span>(postSecondary) { <span class="dots" id="educationDots">...</span> <span class="indent" id="educationHide"> <br>
                             <span id="variable">university</span> = <span id="default">"Ryerson University"</span>; <br>
                             <span id="variable">expectedGraduation</span> = <span id="numbers">2022</span>; <br>
-                            <span id="variable">awards[]</span> = {<span id="default">"2017/2018 Faculty of Science <a href="https://www.ryerson.ca/content/dam/science/students/studentawards/Dean'sList20172018.pdf" target="_blank">Deans List</a> Recipient"</span>}; <br>                        
+                            <span id="variable">awards[]</span> = {<span id="default">"2017/2018 Faculty of Science <a href="https://www.ryerson.ca/content/dam/science/students/studentawards/Dean'sList20172018.pdf" target="_blank">Deans List</a> Recipient"</span>}; <br>
+                            <span id="variable">relevantCourses[]</span> = {<span id="default">"Data Structures"</span>, <span id="default">"Computer Science I & II"</span>, <span id="default">"Web Systems Development"</span>, <span id="default">"Intro to C and Unix"</span>, <span id="default">"Discrete Math"</span>, <span id="default">"Linear Algebra"</span>, <span id="default">"Calculus"</span>};         
+                        </span>}
+                    </p>
+                    <p id="includes" class="internal_container" onclick="hideFunc('technologiesHide','technologiesDots')">
+                        <span id="func">technologiesAnd</span>(languages) { <span class="dots" id="technologiesDots">...</span> <span class="indent" id="technologiesHide"> <br>
+                            <span id="variable">webLanguages[]</span> = {<span id="default">"HTML"</span>, <span id="default">"CSS"</span>, <span id="default">"Perl"</span>, <span id="default">"PHP"</span>}; <br>
+                            <span id="variable">webFrameworks[]</span> = {<span id="default">"Django"</span>, <span id="default">"Bootstrap"</span>}; <br>
+                            <span id="variable">generalPurposeLanguages[]</span> = {<span id="default">"Java"</span>, <span id="default">"C"</span>, <span id="default">"Dart"</span>, <span id="default">"Python"</span>}; <br>
+                            <span id="variable">mobileFrameworks[]</span> = {<span id="default">"Flutter"</span>}; <br>
+                            <span id="variable">developmentPlatforms[]</span> = {<span id="default">"Visual Studio Code"</span>, <span id="default">"Intellij Idea"</span>, <span id="default">"VIM"</span>, <span id="default">"GitHub"</span>};
+                        </span>}
+                    </p>
+                    <p id="includes" class="internal_container" onclick="hideFunc('projectsHide','projectsDots')">
+                        <span id="func">projectsI</span>(made) { <span class="dots" id="projectsDots">...</span> <span class="indent" id="projectsHide"> <br>
+                            <span id="variable">workingOnThis</span> = True;
                         </span>}
                     </p>
                     <p id="includes" class="internal_container">
-                        <span id="func">toBe</span>(continued) { <span class="indent"> <br>
-                            <span id="variable">stllWorkingOnThis</span> = True; <br>
+                        <span id="func">toBe</span>(continued) { <span class="indent" style = "display: block;"> <br>
+                            <span id="variable">stllWorkingOnThis</span> = True;
                         </span>}
                     </p> 
                 </div>
             </div>
         </div>
 
-        <!--<script>
-            function hideFunc() {
-                var x = document.getElementById("aboutHide");
-                var y = document.getElementById("aboutDots");
-                if(x.style.display == "none") {
-                    x.style.display = "block";
-                    y.style.display = "none";
-                } else {
+        <script>
+            function hideFunc(x, y) {
+                x = document.getElementById(x);
+                y = document.getElementById(y);
+                if(x.style.display == "block") {
                     x.style.display = "none";
                     y.style.display = "inline";
+                } else {
+                    x.style.display = "block";
+                    y.style.display = "none";
                 }
             }
-        </script> -->
+        </script>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
