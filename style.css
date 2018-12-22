@@ -1,5 +1,6 @@
 html {
     overflow-y: scroll;
+    cursor:default;
 }
 
 body {
@@ -51,6 +52,13 @@ body {
     font-size: 1.25em;
 }
 
+.functions {
+    cursor: pointer;
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
 .indent {
     display: none;
     padding-left: 50px;
